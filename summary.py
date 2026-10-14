@@ -1,6 +1,7 @@
 import sys #Access command-line arguments
+Position = int(sys.argv[2])
 from collections import Counter #Count occurences and store it in dictionary
-filename = sys.argv[1] #Get the log in variable filename
+filename = sys.argv[1]#Get the log in variable filename
 with open(filename) as f: #Open the log file
     lines=f.readlines() #Read all lines 
 print("Total lines:", len(lines))#Print total lines
